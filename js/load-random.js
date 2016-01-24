@@ -3,6 +3,8 @@ var pageList = [1, 2, 3];
 shuffle(pageList);
 init();
 
+var pageNum = 0;
+
 function pageChange() {
 	$( "#arrow-right" ).click(function() {
 		$("#current").fadeToggle();
