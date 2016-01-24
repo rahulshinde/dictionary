@@ -1,27 +1,35 @@
-var pageList = [1, 2, 3];
+var pageList = [1, 2, 3, 4];
 
 shuffle(pageList);
 init();
 
-var pageNum = 0;
+var pageNum = 1;
+
+function pageLoad() {
+  $('.' + (pageNum + 1)).load(pageList[pageNum] + ".html");
+  $('.' + (pageNum + 1)).toggle();
+}
 
 function pageChange() {
 	$( "#arrow-right" ).click(function() {
-		$("#current").fadeToggle();
-		$(".next-class").fadeToggle();
+    $('.' + pageNum).remove();
+    pageNum = pageNum + 1;
+    $('.' + pageNum).fadeToggle();
 
-		$(".current-class").attr("id","previous");
-
-		$(".next-class").attr("id","current");
-		$("#current").fadeToggle();
+    if (pageNum >= 4) {
+      $('#arrow-right').remove();
+    }
+    
+    pageLoad();
 	});
 }
 
 function init() {
-	console.log(pageList);
-	$( "#current" ).load( pageList[0] + ".html" );
-	$("#next").load( pageList[1] + ".html" );
+  $('.1').load(pageList[0] + ".html");
+  $('.2').load(pageList[1] + ".html");
+  
 
+  console.log(pageList);
 	pageChange();
 
 }
