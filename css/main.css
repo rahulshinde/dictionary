@@ -56,23 +56,13 @@ table {
 	margin: 0 30% 20px 30%;
 }*/
 
-#arrow-left {
-	position: fixed;
-	width: 100px;
-	top: 40vh;
-	left: 30px;
-
-}
-
 #arrow-right {
 	position: fixed;
 	width: 100px;
-	top: 40vh;
+	bottom: 30px;
 	right: 30px;
 }
 
-
-#arrow-left:hover,
 #arrow-right:hover {
 	cursor: pointer;
 
