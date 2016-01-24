@@ -51,7 +51,8 @@ table {
 
 .container1,
 .container2,
-.container3 {
+.container3,
+.container4 {
 	position: fixed;
 	top: 0;
 	bottom: 0;
@@ -68,4 +69,8 @@ table {
 
 .container3 {
 	background-color: green;
+}
+
+.container4 {
+	background-color: purple;
 }
