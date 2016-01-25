@@ -54,7 +54,7 @@ table {
    =================================== */
 
 body {
-	background-color: rgb(0,0,255);
+	background-color: rgb(0,0,0);
 }
 
 /* =================
@@ -68,7 +68,7 @@ input[type=text] {
 	-webkit-appearance: none;
 	text-decoration: none;
 	color: white;
-	background-color: blue;
+	background-color: black;
 	border: 1px solid white;
 }
 
