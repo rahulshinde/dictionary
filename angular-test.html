@@ -20,19 +20,13 @@
 </head>
 <body>
   <div class="container" ng-app="sortApp" ng-controller="mainController">
-    
-    <!-- <div class="alert alert-info">
-      <p>Sort Type: {{ sortType }}</p>
-      <p>Sort Reverse: {{ sortReverse }}</p>
-      <p>Search Query: {{ searchName }}</p>
-    </div> -->
 
     <form>
       <div class="form-group">
         <div class="input-group">
           <div class="input-group-addon"><i class="fa fa-search"></i></div>
 
-          <input type="text" class="form-control" placeholder="Search for projects" ng-model="searchName" onkeypress="search()">
+          <input type="text" class="form-control" placeholder="Search for projects" ng-model="searchName" onkeyup="search()">
 
         </div>      
       </div>
